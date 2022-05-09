@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun May  8 14:24:31 2022
+# Make data base, printed on Sun May  8 21:02:31 2022
 
 # Variables
 
@@ -26,12 +26,10 @@ OBJ_SUBDIRS := bin/Release/obj/Platform bin/Release/obj/Platform/Win32 bin/Relea
 GTK_RC_FILES = /etc/gtk/gtkrc:/home/sasaki/.gtkrc:/home/sasaki/.config/gtkrc
 # environment
 SNAP_INSTANCE_KEY = 
-# environment
-LOCAL_GIT_DIRECTORY = /opt/github-desktop/resources/app/git
 # makefile (from 'Makefile', line 274)
 color_blue := \033[0;34m
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-7b1b8c11-30e7-4b2f-b28e-7bfc3f39648d.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-aaf3bc06-bfb4-49e0-b943-51e7f56f51c6.sock
 # makefile (from 'Makefile', line 87)
 SRC_DIR := src
 # environment
@@ -167,19 +165,21 @@ SNAP_REEXEC =
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 41789
+VSCODE_PID = 3034
 # makefile (from 'Makefile', line 127)
 PRODUCTION_MACOS_BUNDLE_NAME = App
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
+# environment
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # makefile (from 'env/.all.mk', line 7)
 _CFLAGS_OTHER := -fdiagnostics-color=always
 # makefile (from 'Makefile', line 185)
 _PCH_HFILE := PCH.hpp
 # environment
-SESSION_MANAGER = local/sasaki-note:@/tmp/.ICE-unix/1049,unix/sasaki-note:/tmp/.ICE-unix/1049
+SESSION_MANAGER = local/sasaki-note:@/tmp/.ICE-unix/1077,unix/sasaki-note:/tmp/.ICE-unix/1077
 # automatic
 *F = $(notdir $*)
 # makefile (from 'Makefile', line 189)
@@ -213,7 +213,7 @@ MAKECMDGOALS := makepch
 # makefile (from 'Makefile', line 242)
 UNI_COPY := ➦
 # environment
-SHLVL = 2
+SHLVL = 1
 # makefile (from 'Makefile', line 186)
 _PCH_EXT := hpp
 # makefile (from 'env/.all.mk', line 3)
@@ -229,7 +229,7 @@ _BUILDL := release
 # environment
 SNAP_COOKIE = sCYcw1kZ5vRx5cIylmkmxskr6a-GP2Q-QjU72xSyk6tejHCShsa9
 # environment
-PATH = /home/sasaki/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin
+PATH = /home/sasaki/.local/bin:/home/sasaki/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:/usr/lib/jvm/default/bin
 # makefile (from 'Makefile', line 74)
 BUILD_MACROS = 
 # default
@@ -282,12 +282,14 @@ NAME = game.exe
 XDG_SEAT = seat0
 # environment
 XDG_CURRENT_DESKTOP = KDE
+# environment
+LS_COLORS = 
 # automatic
 +F = $(notdir $+)
 # environment
+ 
 XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
 # environment
- 
 DESKTOP_SESSION = plasma
 # makefile (from 'Makefile', line 212)
 _Q := @
@@ -320,7 +322,7 @@ build_deps = 	$(foreach dep,$(BUILD_DEPENDENCIES),$(call copy_to,$(dep),$(BLD_DI
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 909
+SYSTEMD_EXEC_PID = 911
 # makefile (from 'Makefile', line 129)
 PRODUCTION_MACOS_BACKGROUND = dmg-background
 # makefile (from 'Makefile', line 275)
@@ -461,7 +463,7 @@ LC_IDENTIFICATION = pt_BR.UTF-8
 # environment
 SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
 # variable set hash-table stats:
-# Load=220/1024=21%, Rehash=0, Collisions=38/480=8%
+# Load=221/1024=22%, Rehash=0, Collisions=38/481=8%
 
 # Pattern-specific Variable Values
 
@@ -474,13 +476,13 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # bin/Release/obj/Platform: could not be stat'd.
 # / (device 66312, inode 2): No files, no impossibilities so far.
 # src (device 66312, inode 3693877): 1 files, no impossibilities so far.
-# . (device 66312, inode 3693785): 14 files, no impossibilities.
+# . (device 66312, inode 3693785): 16 files, no impossibilities.
 # bin/Release/dep: could not be stat'd.
 # bin/Release: could not be stat'd.
-# bin: could not be stat'd.
+# bin (device 66312, inode 3821299): No files, no impossibilities so far.
 # bin/Release/dep/Platform: could not be stat'd.
 
-# 15 files, no impossibilities in 10 directories.
+# 17 files, no impossibilities in 10 directories.
 
 # Implicit Rules
 
@@ -570,7 +572,6 @@ env/linux.release.mk:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
 
 bin/Release/obj/Platform/MacOS:
 #  Implicit rule search has not been done.
@@ -583,6 +584,7 @@ bin/Release/obj/Platform/MacOS:
 bin/Release/obj/Platform/Unix:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
+ 
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 357):
 	$(if $(_CLEAN),,@printf '\$(color_blue)')
@@ -729,8 +731,28 @@ src/PCH.hpp:
 
 bin/Release:
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := bin/Release
+# automatic
+# * := 
+# automatic
+# < := 
+# automatic
+# + := 
+# automatic
+# % := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/14=7%
 #  recipe to execute (from 'Makefile', line 357):
 	$(if $(_CLEAN),,@printf '\$(color_blue)')
 	$(MKDIR) $@
@@ -840,6 +862,7 @@ makepch: bin/Release/obj/PCH.hpp.gch
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # variable set hash-table stats:
+ 
 # Load=0/32=0%, Rehash=0, Collisions=0/5=0%
 #  recipe to execute (from 'Makefile', line 293):
 	@printf ''
@@ -852,29 +875,9 @@ makepch: bin/Release/obj/PCH.hpp.gch
 
 bin:
 #  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
-#  File does not exist.
+#  Last modified 2022-05-08 16:09:26.254258341
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := bin
-# automatic
-# * := 
- 
-# automatic
-# < := 
-# automatic
-# + := 
-# automatic
-# % := 
-# automatic
-# ^ := 
-# automatic
-# ? := 
-# automatic
-# | := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/14=7%
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 357):
 	$(if $(_CLEAN),,@printf '\$(color_blue)')
 	$(MKDIR) $@
@@ -1005,13 +1008,13 @@ bin/Release/game.dll: bin/Release/obj/PCH.hpp.gch bin/Release/obj/Platform/Win32
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 98 / storage = 1351 B / avg = 13 B
-# current buf: size = 8162 B / used = 1351 B / count = 98 / avg = 13 B
+# strcache buffers: 1 (0) / strings = 99 / storage = 1360 B / avg = 13 B
+# current buf: size = 8162 B / used = 1360 B / count = 99 / avg = 13 B
 
-# strcache performance: lookups = 307 / hit rate = 68%
+# strcache performance: lookups = 309 / hit rate = 67%
 # hash-table stats:
-# Load=98/8192=1%, Rehash=0, Collisions=10/307=3%
-# Finished Make data base on Sun May  8 14:24:31 2022
+# Load=99/8192=1%, Rehash=0, Collisions=10/309=3%
+# Finished Make data base on Sun May  8 21:02:31 2022
 
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
@@ -1020,7 +1023,7 @@ bin/Release/game.dll: bin/Release/obj/PCH.hpp.gch bin/Release/obj/Platform/Win32
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun May  8 14:24:31 2022
+# Make data base, printed on Sun May  8 21:02:31 2022
 
 # Variables
 
@@ -1040,12 +1043,10 @@ OBJ_SUBDIRS := bin/Release/obj/Platform bin/Release/obj/Platform/Win32 bin/Relea
 GTK_RC_FILES = /etc/gtk/gtkrc:/home/sasaki/.gtkrc:/home/sasaki/.config/gtkrc
 # environment
 SNAP_INSTANCE_KEY = 
-# environment
-LOCAL_GIT_DIRECTORY = /opt/github-desktop/resources/app/git
 # makefile (from 'Makefile', line 274)
 color_blue := \033[0;34m
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-7b1b8c11-30e7-4b2f-b28e-7bfc3f39648d.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-aaf3bc06-bfb4-49e0-b943-51e7f56f51c6.sock
 # makefile (from 'Makefile', line 87)
 SRC_DIR := src
 # environment
@@ -1097,7 +1098,6 @@ endef
 MAIL = /var/spool/mail/sasaki
 # environment
 XDG_DATA_DIRS = /home/sasaki/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop
- 
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # makefile (from 'env/linux.all.mk', line 7)
@@ -1147,6 +1147,7 @@ APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 PAM_KWALLET5_LOGIN = /run/user/1000/kwallet5.socket
 # makefile (from 'Makefile', line 228)
 OBJ_COMPILE_T = $(CC) $(CFLAGS_DEPS_T) $(_BUILD_MACROS) $(_INCLUDE_DIRS) $(_INCLUDE_PCH) $(CFLAGS) -o $@ -c $<
+ 
 # environment
 MFLAGS = -pqrR --no-print-directory
 # makefile (from 'Makefile', line 217)
@@ -1182,19 +1183,21 @@ SNAP_REEXEC =
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 41789
+VSCODE_PID = 3034
 # makefile (from 'Makefile', line 127)
 PRODUCTION_MACOS_BUNDLE_NAME = App
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
+# environment
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # makefile (from 'env/.all.mk', line 7)
 _CFLAGS_OTHER := -fdiagnostics-color=always
 # makefile (from 'Makefile', line 185)
 _PCH_HFILE := PCH.hpp
 # environment
-SESSION_MANAGER = local/sasaki-note:@/tmp/.ICE-unix/1049,unix/sasaki-note:/tmp/.ICE-unix/1049
+SESSION_MANAGER = local/sasaki-note:@/tmp/.ICE-unix/1077,unix/sasaki-note:/tmp/.ICE-unix/1077
 # automatic
 *F = $(notdir $*)
 # makefile (from 'Makefile', line 189)
@@ -1228,7 +1231,7 @@ MAKECMDGOALS := all
 # makefile (from 'Makefile', line 242)
 UNI_COPY := ➦
 # environment
-SHLVL = 2
+SHLVL = 1
 # makefile (from 'Makefile', line 186)
 _PCH_EXT := hpp
 # makefile (from 'env/.all.mk', line 3)
@@ -1244,7 +1247,7 @@ _BUILDL := release
 # environment
 SNAP_COOKIE = sCYcw1kZ5vRx5cIylmkmxskr6a-GP2Q-QjU72xSyk6tejHCShsa9
 # environment
-PATH = /home/sasaki/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin
+PATH = /home/sasaki/.local/bin:/home/sasaki/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:/usr/lib/jvm/default/bin
 # makefile (from 'Makefile', line 74)
 BUILD_MACROS = 
 # default
@@ -1297,6 +1300,8 @@ NAME = game.exe
 XDG_SEAT = seat0
 # environment
 XDG_CURRENT_DESKTOP = KDE
+# environment
+LS_COLORS = 
 # automatic
 +F = $(notdir $+)
 # environment
@@ -1334,7 +1339,7 @@ build_deps = 	$(foreach dep,$(BUILD_DEPENDENCIES),$(call copy_to,$(dep),$(BLD_DI
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 909
+SYSTEMD_EXEC_PID = 911
 # makefile (from 'Makefile', line 129)
 PRODUCTION_MACOS_BACKGROUND = dmg-background
 # makefile (from 'Makefile', line 275)
@@ -1382,7 +1387,6 @@ _LIB_DIRS := -Llib/ -L/usr/local/lib
 # makefile (from 'env/.all.mk', line 5)
 _CFLAGS_STD := -std=c++17
 # environment
- 
 XDG_RUNTIME_DIR = /run/user/1000
 # makefile (from 'env/linux.all.mk', line 2)
 CFLAGS := -O2 -std=c++17 -Wall -Werror -Wextra -Wpedantic -Wunreachable-code -Wunused -Wignored-qualifiers -Wcast-align -Wformat-nonliteral -Wformat=2 -Winvalid-pch -Wmissing-declarations -Wmissing-format-attribute -Wmissing-include-dirs -Wredundant-decls -Wswitch-default -Wodr -fdiagnostics-color=always -fpic
@@ -1429,6 +1433,7 @@ BLD_DIR := bin/Release
 # automatic
 <F = $(notdir $<)
 # makefile (from 'Makefile', line 79)
+ 
 BUILD_DEPENDENCIES = 
 # makefile (from 'Makefile', line 181)
 DEPS := bin/Release/dep/Platform/Win32/WindowsPlatform.cpp.d bin/Release/dep/Platform/MacOS/MacOSPlatform.cpp.d bin/Release/dep/Platform/Unix/LinuxPlatform.cpp.d bin/Release/dep/Main.cpp.d bin/Release/dep/PCH.d
@@ -1476,7 +1481,7 @@ LC_IDENTIFICATION = pt_BR.UTF-8
 # environment
 SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
 # variable set hash-table stats:
-# Load=220/1024=21%, Rehash=0, Collisions=36/480=8%
+# Load=221/1024=22%, Rehash=0, Collisions=36/481=7%
 
 # Pattern-specific Variable Values
 
@@ -1488,10 +1493,10 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # bin/Release/obj: could not be stat'd.
 # / (device 66312, inode 2): No files, no impossibilities so far.
 # src (device 66312, inode 3693877): No files, no impossibilities so far.
-# . (device 66312, inode 3693785): 14 files, no impossibilities.
+# . (device 66312, inode 3693785): 16 files, no impossibilities.
 # bin/Release/dep: could not be stat'd.
 
-# 14 files, no impossibilities in 6 directories.
+# 16 files, no impossibilities in 6 directories.
 
 # Implicit Rules
 
@@ -1668,7 +1673,6 @@ bin/Release/dep/Platform:
 #  recipe to execute (from 'Makefile', line 357):
 	$(if $(_CLEAN),,@printf '\$(color_blue)')
 	$(MKDIR) $@
- 
 
 mkdirprod:
 #  Phony target (prerequisite of .PHONY).
@@ -1721,6 +1725,7 @@ clean:
 	$(_Q)$(RM) $(TARGET) $(DEPS) $(OBJS)
 
 bin/Release:
+ 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -1953,7 +1958,6 @@ bin/Release/obj/PCH.hpp.gch:
 #  Modification time never checked.
 #  File has not been updated.
 
- 
 .PHONY: rebuild buildprod makepch makebuild clean rmprod mkdirprod releasetoprod makeproduction
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -1990,12 +1994,12 @@ bin/Release/game.dll: bin/Release/obj/PCH.hpp.gch bin/Release/obj/Platform/Win32
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 94 / storage = 1305 B / avg = 13 B
-# current buf: size = 8162 B / used = 1305 B / count = 94 / avg = 13 B
+# strcache buffers: 1 (0) / strings = 95 / storage = 1314 B / avg = 13 B
+# current buf: size = 8162 B / used = 1314 B / count = 95 / avg = 13 B
 
-# strcache performance: lookups = 266 / hit rate = 64%
+# strcache performance: lookups = 268 / hit rate = 64%
 # hash-table stats:
-# Load=94/8192=1%, Rehash=0, Collisions=7/266=3%
-# Finished Make data base on Sun May  8 14:24:31 2022
+# Load=95/8192=1%, Rehash=0, Collisions=7/268=3%
+# Finished Make data base on Sun May  8 21:02:31 2022
 
  
