@@ -22,13 +22,15 @@ int main()
 	const float theta_0 { pi / 3 };
 	const float omega_0 { -0.29 };
 	const float dt { 10 / fps };
+	const sf::Vector2f origin { sf::Vector2f(640, 360) };
+
 	float time = {};
 	float theta { theta_0 };
 	float omega { omega_0 };
 	float x { l * std::sin(theta_0) };
 	float y { l * std::cos(theta_0) };
-	const sf::Vector2f origin = sf::Vector2f(640, 360);
-	sf::Vector2f bob_position = sf::Vector2f(x + 640, y + 360);
+
+	sf::Vector2f bob_position { sf::Vector2f(x + 640, y + 360) };
 
 	// run the program as long as the window is
 	bool run { false };
@@ -43,12 +45,12 @@ int main()
 				window.close();
 			switch (event.type)
 			{
-			case sf::Event::KeyPressed:
-				if (event.key.code == sf::Keyboard::Space)
-					run = (run) ? 0 : 1;
-				break;
-			default:
-				break;
+				case sf::Event::KeyPressed:
+					if (event.key.code == sf::Keyboard::Space)
+						run = (run) ? 0 : 1;
+					break;
+				default:
+					break;
 			}
 		}
 		if (run)
@@ -68,7 +70,6 @@ int main()
 
 			//std::cout << theta << "\n";
 			std::cout << omega << "\n";
-			
 
 			// we set x and y according to the angle and set that as the bob position
 			x = l * std::sin(theta);
@@ -89,12 +90,12 @@ int main()
 			// and here we add the little top text
 			sf::Text theta_display;
 			theta_display.setFont(font);
-			theta_display.setString("Angulo = " + std::to_string(static_cast<int>((theta * 180 / pi)) % 360) + " graus");
+			theta_display.setString("Angle = " + std::to_string(static_cast<int>((theta * 180 / pi)) % 360) + " degrees");
 			theta_display.setCharacterSize(24);
 
 			sf::Text pause;
 			pause.setFont(font);
-			pause.setString("Aperte espaco para pausar");
+			pause.setString("Press spacebar to pause");
 			pause.setPosition(980.f, 0.f);
 			pause.setCharacterSize(24);
 
