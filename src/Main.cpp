@@ -1,6 +1,10 @@
 #include "Platform/Platform.hpp"
 #include <cmath>
 
+
+float omegaDot(float theta, float g, float l);
+float thetaDot(float omega);
+
 int main()
 {
 
@@ -15,9 +19,11 @@ int main()
 	const float l { 400 };
 	const float pi { 3.14f };
 	const float theta_0 { pi / 3 };
+	const float omega_0 { -0.5 };
 	const float dt { 10 / fps };
 	float time = {};
 	float theta { theta_0 };
+	float omega { omega_0 };
 	float x { l * std::sin(theta_0) };
 	float y { l * std::cos(theta_0) };
 	const sf::Vector2f origin = sf::Vector2f(400, 50);
@@ -42,8 +48,21 @@ int main()
 		// We increment the time by dt, so we can step the pendulum
 		time += dt;
 
-		// we aply the formula for the angle in terms of time
-		theta = theta_0 * std::cos(std::sqrt(g / l) * time);
+		// we apply runge-kutta so that we can determinate theta in terms of time.
+
+		float k1omega, k2omega, k3omega, k4omega, k1theta, k2theta, k3theta, k4theta;
+
+		k1omega = omegaDot(theta, g, l);
+		k1theta = thetaDot(omega);
+		k2omega = omegaDot(theta + dt*k1theta/2, g, l);
+		k2theta = thetaDot(omega + dt*k1omega/2);
+		k3omega = omegaDot(theta + dt*k2theta/3, g, l);
+		k3theta = thetaDot(omega + dt*k2omega/2);
+		k4omega = omegaDot(theta + dt*k3theta, g, l);
+		k4theta = thetaDot(omega + dt*k3omega);
+
+		omega = omega + (dt/6) * (k1omega + 2*k2omega + 2*k3omega + k4omega);
+		theta = theta + (dt / 6) * (k1theta + 2 * k2theta + 2 * k3theta + k4theta);
 
 		//std::cout << theta << "\n";
 
@@ -57,7 +76,7 @@ int main()
 		bob.setOrigin(10.f, 10.f);
 		bob.setPosition(bob_position);
 
-		// and here we declare the line vertex
+		// and here we declare the line vertex array
 		sf::Vertex line[] = {
 			origin,
 			bob_position
@@ -66,7 +85,7 @@ int main()
 		// and here we add the little top text
 		sf::Text theta_display;
 		theta_display.setFont(font);
-		theta_display.setString("Angle = " + std::to_string(theta * 180 / pi) + " graus");
+		theta_display.setString("Angle = " + std::to_string(static_cast<int>((theta * 180 / pi)) % 360) + " graus");
 		theta_display.setCharacterSize(24);
 
 		// draw everything here.
@@ -79,4 +98,13 @@ int main()
 	}
 
 	return 0;
+}
+
+float omegaDot(float theta, float g, float l)
+{
+	return -1 * g * std::sin(theta) / l;
+}
+
+float thetaDot(float omega){
+	return omega;
 }

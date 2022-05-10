@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun May  8 21:02:31 2022
+# Make data base, printed on Mon May  9 20:20:24 2022
 
 # Variables
 
@@ -21,7 +21,7 @@ NO_AT_BRIDGE = 1
 # makefile (from 'Makefile', line 124)
 PRODUCTION_MACOS_ICON = icon
 # makefile (from 'Makefile', line 177)
-OBJ_SUBDIRS := bin/Release/obj/Platform bin/Release/obj/Platform/Win32 bin/Release/obj/Platform/MacOS bin/Release/obj/Platform/Unix bin/Release/obj/Utility
+OBJ_SUBDIRS := bin/Release/obj/Fonts bin/Release/obj/Platform bin/Release/obj/Platform/Win32 bin/Release/obj/Platform/MacOS bin/Release/obj/Platform/Unix bin/Release/obj/Utility
 # environment
 GTK_RC_FILES = /etc/gtk/gtkrc:/home/sasaki/.gtkrc:/home/sasaki/.config/gtkrc
 # environment
@@ -29,7 +29,7 @@ SNAP_INSTANCE_KEY =
 # makefile (from 'Makefile', line 274)
 color_blue := \033[0;34m
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-aaf3bc06-bfb4-49e0-b943-51e7f56f51c6.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-8038e29f-27ec-4d9e-9462-b36fafac6f5e.sock
 # makefile (from 'Makefile', line 87)
 SRC_DIR := src
 # environment
@@ -49,7 +49,7 @@ MAKE_COMMAND := make
 # environment
 GTK3_MODULES = xapp-gtk3-module
 # makefile (from 'Makefile', line 205)
-_DIRECTORIES := bin bin/Release bin/Release/dep bin/Release/dep/Platform bin/Release/dep/Platform/MacOS bin/Release/dep/Platform/Unix bin/Release/dep/Platform/Win32 bin/Release/dep/Utility bin/Release/obj bin/Release/obj/Platform bin/Release/obj/Platform/MacOS bin/Release/obj/Platform/Unix bin/Release/obj/Platform/Win32 bin/Release/obj/Utility
+_DIRECTORIES := bin bin/Release bin/Release/dep bin/Release/dep/Fonts bin/Release/dep/Platform bin/Release/dep/Platform/MacOS bin/Release/dep/Platform/Unix bin/Release/dep/Platform/Win32 bin/Release/dep/Utility bin/Release/obj bin/Release/obj/Fonts bin/Release/obj/Platform bin/Release/obj/Platform/MacOS bin/Release/obj/Platform/Unix bin/Release/obj/Platform/Win32 bin/Release/obj/Utility
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # makefile (from 'Makefile', line 91)
@@ -165,7 +165,7 @@ SNAP_REEXEC =
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 3034
+VSCODE_PID = 20687
 # makefile (from 'Makefile', line 127)
 PRODUCTION_MACOS_BUNDLE_NAME = App
 # environment
@@ -179,7 +179,7 @@ _CFLAGS_OTHER := -fdiagnostics-color=always
 # makefile (from 'Makefile', line 185)
 _PCH_HFILE := PCH.hpp
 # environment
-SESSION_MANAGER = local/sasaki-note:@/tmp/.ICE-unix/1077,unix/sasaki-note:/tmp/.ICE-unix/1077
+SESSION_MANAGER = local/sasaki-note:@/tmp/.ICE-unix/1089,unix/sasaki-note:/tmp/.ICE-unix/1089
 # automatic
 *F = $(notdir $*)
 # makefile (from 'Makefile', line 189)
@@ -197,7 +197,7 @@ DEP_DIR := bin/Release/dep
 # makefile (from 'Makefile', line 119)
 _LINUX_GREP_CWD := \/home\/sasaki\/Documentos\/GitHub\/Pendulum-Simulation
 # makefile (from 'Makefile', line 182)
-DEP_SUBDIRS := bin/Release/dep/Platform bin/Release/dep/Platform/Win32 bin/Release/dep/Platform/MacOS bin/Release/dep/Platform/Unix bin/Release/dep/Utility
+DEP_SUBDIRS := bin/Release/dep/Fonts bin/Release/dep/Platform bin/Release/dep/Platform/Win32 bin/Release/dep/Platform/MacOS bin/Release/dep/Platform/Unix bin/Release/dep/Utility
 # makefile (from 'Makefile', line 13)
 PLATFORM = linux
 # environment
@@ -287,12 +287,12 @@ LS_COLORS =
 # automatic
 +F = $(notdir $+)
 # environment
- 
 XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
 # environment
 DESKTOP_SESSION = plasma
 # makefile (from 'Makefile', line 212)
 _Q := @
+ 
 # makefile (from 'env/.all.mk', line 2)
 CLEAN_OUTPUT := true
 # environment
@@ -308,7 +308,7 @@ QT_SCREEN_SCALE_FACTORS = eDP=1.25;HDMI-1-0=1.25;DP-1-0=1.25;DP-1-1=1.25;
 # environment
 LOGNAME = sasaki
 # makefile (from 'Makefile', line 93)
-PROJECT_DIRS := Platform Platform/Win32 Platform/MacOS Platform/Unix Utility
+PROJECT_DIRS := Fonts Platform Platform/Win32 Platform/MacOS Platform/Unix Utility
 # environment
 SNAP_ARCH = amd64
 # environment
@@ -322,7 +322,7 @@ build_deps = 	$(foreach dep,$(BUILD_DEPENDENCIES),$(call copy_to,$(dep),$(BLD_DI
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 911
+SYSTEMD_EXEC_PID = 933
 # makefile (from 'Makefile', line 129)
 PRODUCTION_MACOS_BACKGROUND = dmg-background
 # makefile (from 'Makefile', line 275)
@@ -476,29 +476,29 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # bin/Release/obj/Platform: could not be stat'd.
 # / (device 66312, inode 2): No files, no impossibilities so far.
 # src (device 66312, inode 3693877): 1 files, no impossibilities so far.
-# . (device 66312, inode 3693785): 16 files, no impossibilities.
+# . (device 66312, inode 3693785): 17 files, no impossibilities.
 # bin/Release/dep: could not be stat'd.
 # bin/Release: could not be stat'd.
 # bin (device 66312, inode 3821299): No files, no impossibilities so far.
 # bin/Release/dep/Platform: could not be stat'd.
 
-# 17 files, no impossibilities in 10 directories.
+# 18 files, no impossibilities in 10 directories.
 
 # Implicit Rules
 
-bin/Release/obj/%.o: src/% bin/Release/obj/PCH.hpp.gch | bin/Release/dep/%.d bin bin/Release bin/Release/dep bin/Release/dep/Platform bin/Release/dep/Platform/MacOS bin/Release/dep/Platform/Unix bin/Release/dep/Platform/Win32 bin/Release/dep/Utility bin/Release/obj bin/Release/obj/Platform bin/Release/obj/Platform/MacOS bin/Release/obj/Platform/Unix bin/Release/obj/Platform/Win32 bin/Release/obj/Utility
+bin/Release/obj/%.o: src/% bin/Release/obj/PCH.hpp.gch | bin/Release/dep/%.d bin bin/Release bin/Release/dep bin/Release/dep/Fonts bin/Release/dep/Platform bin/Release/dep/Platform/MacOS bin/Release/dep/Platform/Unix bin/Release/dep/Platform/Win32 bin/Release/dep/Utility bin/Release/obj bin/Release/obj/Fonts bin/Release/obj/Platform bin/Release/obj/Platform/MacOS bin/Release/obj/Platform/Unix bin/Release/obj/Platform/Win32 bin/Release/obj/Utility
 #  recipe to execute (from 'Makefile', line 307):
 	$(call compile_with,@,<,$(OBJ_COMPILE),$(POST_COMPILE))
 
-bin/Release/obj/./%.o: /% bin/Release/obj/PCH.hpp.gch | bin/Release/dep/./%.d bin bin/Release bin/Release/dep bin/Release/dep/Platform bin/Release/dep/Platform/MacOS bin/Release/dep/Platform/Unix bin/Release/dep/Platform/Win32 bin/Release/dep/Utility bin/Release/obj bin/Release/obj/Platform bin/Release/obj/Platform/MacOS bin/Release/obj/Platform/Unix bin/Release/obj/Platform/Win32 bin/Release/obj/Utility
+bin/Release/obj/./%.o: /% bin/Release/obj/PCH.hpp.gch | bin/Release/dep/./%.d bin bin/Release bin/Release/dep bin/Release/dep/Fonts bin/Release/dep/Platform bin/Release/dep/Platform/MacOS bin/Release/dep/Platform/Unix bin/Release/dep/Platform/Win32 bin/Release/dep/Utility bin/Release/obj bin/Release/obj/Fonts bin/Release/obj/Platform bin/Release/obj/Platform/MacOS bin/Release/obj/Platform/Unix bin/Release/obj/Platform/Win32 bin/Release/obj/Utility
 #  recipe to execute (from 'Makefile', line 310):
 	$(call compile_with,@,<,$(OBJ_COMPILE_T),$(POST_COMPILE_T))
 
-bin/Release/obj/%.hpp.gch: src/%.hpp | bin/Release/dep/%.d bin bin/Release bin/Release/dep bin/Release/dep/Platform bin/Release/dep/Platform/MacOS bin/Release/dep/Platform/Unix bin/Release/dep/Platform/Win32 bin/Release/dep/Utility bin/Release/obj bin/Release/obj/Platform bin/Release/obj/Platform/MacOS bin/Release/obj/Platform/Unix bin/Release/obj/Platform/Win32 bin/Release/obj/Utility
+bin/Release/obj/%.hpp.gch: src/%.hpp | bin/Release/dep/%.d bin bin/Release bin/Release/dep bin/Release/dep/Fonts bin/Release/dep/Platform bin/Release/dep/Platform/MacOS bin/Release/dep/Platform/Unix bin/Release/dep/Platform/Win32 bin/Release/dep/Utility bin/Release/obj bin/Release/obj/Fonts bin/Release/obj/Platform bin/Release/obj/Platform/MacOS bin/Release/obj/Platform/Unix bin/Release/obj/Platform/Win32 bin/Release/obj/Utility
 #  recipe to execute (from 'Makefile', line 313):
 	$(call compile_with,@,<,$(PCH_COMPILE),$(POST_COMPILE))
 
-bin/Release/obj/%.res: src/%.rc | bin/Release/dep/%.rc.d bin bin/Release bin/Release/dep bin/Release/dep/Platform bin/Release/dep/Platform/MacOS bin/Release/dep/Platform/Unix bin/Release/dep/Platform/Win32 bin/Release/dep/Utility bin/Release/obj bin/Release/obj/Platform bin/Release/obj/Platform/MacOS bin/Release/obj/Platform/Unix bin/Release/obj/Platform/Win32 bin/Release/obj/Utility
+bin/Release/obj/%.res: src/%.rc | bin/Release/dep/%.rc.d bin bin/Release bin/Release/dep bin/Release/dep/Fonts bin/Release/dep/Platform bin/Release/dep/Platform/MacOS bin/Release/dep/Platform/Unix bin/Release/dep/Platform/Win32 bin/Release/dep/Utility bin/Release/obj bin/Release/obj/Fonts bin/Release/obj/Platform bin/Release/obj/Platform/MacOS bin/Release/obj/Platform/Unix bin/Release/obj/Platform/Win32 bin/Release/obj/Utility
 #  recipe to execute (from 'Makefile', line 316):
 	$(call compile_with,@,<,$(RC_COMPILE),$(POST_COMPILE_RC))
 
@@ -579,12 +579,12 @@ bin/Release/obj/Platform/MacOS:
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 357):
 	$(if $(_CLEAN),,@printf '\$(color_blue)')
+ 
 	$(MKDIR) $@
 
 bin/Release/obj/Platform/Unix:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
- 
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 357):
 	$(if $(_CLEAN),,@printf '\$(color_blue)')
@@ -767,6 +767,14 @@ bin/Release/game.exe: bin/Release/obj/PCH.hpp.gch bin/Release/obj/Platform/Win32
 	@printf '\n'
 	$(call build_deps)
 
+bin/Release/dep/Fonts:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 357):
+	$(if $(_CLEAN),,@printf '\$(color_blue)')
+	$(MKDIR) $@
+
 bin/Release/dep/Platform/Unix:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -854,6 +862,15 @@ env/.all.mk:
 #  Modification time never checked.
 #  File has not been updated.
 
+bin/Release/obj/Fonts:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 357):
+	$(if $(_CLEAN),,@printf '\$(color_blue)')
+	$(MKDIR) $@
+
+ 
 makepch: bin/Release/obj/PCH.hpp.gch
 #  Phony target (prerequisite of .PHONY).
 #  Command line target.
@@ -862,7 +879,6 @@ makepch: bin/Release/obj/PCH.hpp.gch
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # variable set hash-table stats:
- 
 # Load=0/32=0%, Rehash=0, Collisions=0/5=0%
 #  recipe to execute (from 'Makefile', line 293):
 	@printf ''
@@ -950,7 +966,7 @@ bin/Release/dep/Utility:
 	$(if $(_CLEAN),,@printf '\$(color_blue)')
 	$(MKDIR) $@
 
-bin/Release/obj/PCH.hpp.gch: src/PCH.hpp | bin/Release/dep/PCH.d bin bin/Release bin/Release/dep bin/Release/dep/Platform bin/Release/dep/Platform/MacOS bin/Release/dep/Platform/Unix bin/Release/dep/Platform/Win32 bin/Release/dep/Utility bin/Release/obj bin/Release/obj/Platform bin/Release/obj/Platform/MacOS bin/Release/obj/Platform/Unix bin/Release/obj/Platform/Win32 bin/Release/obj/Utility
+bin/Release/obj/PCH.hpp.gch: src/PCH.hpp | bin/Release/dep/PCH.d bin bin/Release bin/Release/dep bin/Release/dep/Fonts bin/Release/dep/Platform bin/Release/dep/Platform/MacOS bin/Release/dep/Platform/Unix bin/Release/dep/Platform/Win32 bin/Release/dep/Utility bin/Release/obj bin/Release/obj/Fonts bin/Release/obj/Platform bin/Release/obj/Platform/MacOS bin/Release/obj/Platform/Unix bin/Release/obj/Platform/Win32 bin/Release/obj/Utility
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'PCH'
 #  File does not exist.
@@ -1001,20 +1017,20 @@ bin/Release/game.dll: bin/Release/obj/PCH.hpp.gch bin/Release/obj/Platform/Win32
 	@printf '\n'
 
 # files hash-table stats:
-# Load=57/1024=6%, Rehash=0, Collisions=12/270=4%
+# Load=59/1024=6%, Rehash=0, Collisions=13/276=5%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 99 / storage = 1360 B / avg = 13 B
-# current buf: size = 8162 B / used = 1360 B / count = 99 / avg = 13 B
+# strcache buffers: 1 (0) / strings = 102 / storage = 1411 B / avg = 13 B
+# current buf: size = 8162 B / used = 1411 B / count = 102 / avg = 13 B
 
-# strcache performance: lookups = 309 / hit rate = 67%
+# strcache performance: lookups = 326 / hit rate = 68%
 # hash-table stats:
-# Load=99/8192=1%, Rehash=0, Collisions=10/309=3%
-# Finished Make data base on Sun May  8 21:02:31 2022
+# Load=102/8192=1%, Rehash=0, Collisions=10/326=3%
+# Finished Make data base on Mon May  9 20:20:24 2022
 
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
@@ -1023,7 +1039,7 @@ bin/Release/game.dll: bin/Release/obj/PCH.hpp.gch bin/Release/obj/Platform/Win32
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun May  8 21:02:31 2022
+# Make data base, printed on Mon May  9 20:20:24 2022
 
 # Variables
 
@@ -1038,7 +1054,7 @@ NO_AT_BRIDGE = 1
 # makefile (from 'Makefile', line 124)
 PRODUCTION_MACOS_ICON = icon
 # makefile (from 'Makefile', line 177)
-OBJ_SUBDIRS := bin/Release/obj/Platform bin/Release/obj/Platform/Win32 bin/Release/obj/Platform/MacOS bin/Release/obj/Platform/Unix bin/Release/obj/Utility
+OBJ_SUBDIRS := bin/Release/obj/Fonts bin/Release/obj/Platform bin/Release/obj/Platform/Win32 bin/Release/obj/Platform/MacOS bin/Release/obj/Platform/Unix bin/Release/obj/Utility
 # environment
 GTK_RC_FILES = /etc/gtk/gtkrc:/home/sasaki/.gtkrc:/home/sasaki/.config/gtkrc
 # environment
@@ -1046,7 +1062,7 @@ SNAP_INSTANCE_KEY =
 # makefile (from 'Makefile', line 274)
 color_blue := \033[0;34m
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-aaf3bc06-bfb4-49e0-b943-51e7f56f51c6.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-8038e29f-27ec-4d9e-9462-b36fafac6f5e.sock
 # makefile (from 'Makefile', line 87)
 SRC_DIR := src
 # environment
@@ -1066,7 +1082,7 @@ MAKE_COMMAND := make
 # environment
 GTK3_MODULES = xapp-gtk3-module
 # makefile (from 'Makefile', line 205)
-_DIRECTORIES := bin bin/Release bin/Release/dep bin/Release/dep/Platform bin/Release/dep/Platform/MacOS bin/Release/dep/Platform/Unix bin/Release/dep/Platform/Win32 bin/Release/dep/Utility bin/Release/obj bin/Release/obj/Platform bin/Release/obj/Platform/MacOS bin/Release/obj/Platform/Unix bin/Release/obj/Platform/Win32 bin/Release/obj/Utility
+_DIRECTORIES := bin bin/Release bin/Release/dep bin/Release/dep/Fonts bin/Release/dep/Platform bin/Release/dep/Platform/MacOS bin/Release/dep/Platform/Unix bin/Release/dep/Platform/Win32 bin/Release/dep/Utility bin/Release/obj bin/Release/obj/Fonts bin/Release/obj/Platform bin/Release/obj/Platform/MacOS bin/Release/obj/Platform/Unix bin/Release/obj/Platform/Win32 bin/Release/obj/Utility
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # makefile (from 'Makefile', line 91)
@@ -1138,6 +1154,7 @@ _OBJS := Platform/Win32/WindowsPlatform.cpp.o Platform/MacOS/MacOSPlatform.cpp.o
 # makefile
 CURDIR := /home/sasaki/Documentos/GitHub/Pendulum-Simulation
 # environment
+ 
 VSCODE_PIPE_LOGGING = true
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
@@ -1147,7 +1164,6 @@ APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 PAM_KWALLET5_LOGIN = /run/user/1000/kwallet5.socket
 # makefile (from 'Makefile', line 228)
 OBJ_COMPILE_T = $(CC) $(CFLAGS_DEPS_T) $(_BUILD_MACROS) $(_INCLUDE_DIRS) $(_INCLUDE_PCH) $(CFLAGS) -o $@ -c $<
- 
 # environment
 MFLAGS = -pqrR --no-print-directory
 # makefile (from 'Makefile', line 217)
@@ -1183,7 +1199,7 @@ SNAP_REEXEC =
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 3034
+VSCODE_PID = 20687
 # makefile (from 'Makefile', line 127)
 PRODUCTION_MACOS_BUNDLE_NAME = App
 # environment
@@ -1197,7 +1213,7 @@ _CFLAGS_OTHER := -fdiagnostics-color=always
 # makefile (from 'Makefile', line 185)
 _PCH_HFILE := PCH.hpp
 # environment
-SESSION_MANAGER = local/sasaki-note:@/tmp/.ICE-unix/1077,unix/sasaki-note:/tmp/.ICE-unix/1077
+SESSION_MANAGER = local/sasaki-note:@/tmp/.ICE-unix/1089,unix/sasaki-note:/tmp/.ICE-unix/1089
 # automatic
 *F = $(notdir $*)
 # makefile (from 'Makefile', line 189)
@@ -1215,7 +1231,7 @@ DEP_DIR := bin/Release/dep
 # makefile (from 'Makefile', line 119)
 _LINUX_GREP_CWD := \/home\/sasaki\/Documentos\/GitHub\/Pendulum-Simulation
 # makefile (from 'Makefile', line 182)
-DEP_SUBDIRS := bin/Release/dep/Platform bin/Release/dep/Platform/Win32 bin/Release/dep/Platform/MacOS bin/Release/dep/Platform/Unix bin/Release/dep/Utility
+DEP_SUBDIRS := bin/Release/dep/Fonts bin/Release/dep/Platform bin/Release/dep/Platform/Win32 bin/Release/dep/Platform/MacOS bin/Release/dep/Platform/Unix bin/Release/dep/Utility
 # makefile (from 'Makefile', line 13)
 PLATFORM = linux
 # environment
@@ -1325,7 +1341,7 @@ QT_SCREEN_SCALE_FACTORS = eDP=1.25;HDMI-1-0=1.25;DP-1-0=1.25;DP-1-1=1.25;
 # environment
 LOGNAME = sasaki
 # makefile (from 'Makefile', line 93)
-PROJECT_DIRS := Platform Platform/Win32 Platform/MacOS Platform/Unix Utility
+PROJECT_DIRS := Fonts Platform Platform/Win32 Platform/MacOS Platform/Unix Utility
 # environment
 SNAP_ARCH = amd64
 # environment
@@ -1339,7 +1355,7 @@ build_deps = 	$(foreach dep,$(BUILD_DEPENDENCIES),$(call copy_to,$(dep),$(BLD_DI
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 911
+SYSTEMD_EXEC_PID = 933
 # makefile (from 'Makefile', line 129)
 PRODUCTION_MACOS_BACKGROUND = dmg-background
 # makefile (from 'Makefile', line 275)
@@ -1422,6 +1438,7 @@ GSETTINGS_SCHEMA_DIR = /snap/code/95/usr/share/glib-2.0/schemas
 CFLAGS_DEPS = -MT $@ -MMD -MP -MF $(DEP_DIR)/$*.Td
 # environment
 XDG_SESSION_ID = 2
+ 
 # makefile (from 'env/.all.mk', line 21)
 PRODUCTION_EXCLUDE := *.psd *.rar *.7z Thumbs.db .DS_Store
 # environment
@@ -1433,7 +1450,6 @@ BLD_DIR := bin/Release
 # automatic
 <F = $(notdir $<)
 # makefile (from 'Makefile', line 79)
- 
 BUILD_DEPENDENCIES = 
 # makefile (from 'Makefile', line 181)
 DEPS := bin/Release/dep/Platform/Win32/WindowsPlatform.cpp.d bin/Release/dep/Platform/MacOS/MacOSPlatform.cpp.d bin/Release/dep/Platform/Unix/LinuxPlatform.cpp.d bin/Release/dep/Main.cpp.d bin/Release/dep/PCH.d
@@ -1493,26 +1509,26 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # bin/Release/obj: could not be stat'd.
 # / (device 66312, inode 2): No files, no impossibilities so far.
 # src (device 66312, inode 3693877): No files, no impossibilities so far.
-# . (device 66312, inode 3693785): 16 files, no impossibilities.
+# . (device 66312, inode 3693785): 17 files, no impossibilities.
 # bin/Release/dep: could not be stat'd.
 
-# 16 files, no impossibilities in 6 directories.
+# 17 files, no impossibilities in 6 directories.
 
 # Implicit Rules
 
-bin/Release/obj/%.o: src/% bin/Release/obj/PCH.hpp.gch | bin/Release/dep/%.d bin bin/Release bin/Release/dep bin/Release/dep/Platform bin/Release/dep/Platform/MacOS bin/Release/dep/Platform/Unix bin/Release/dep/Platform/Win32 bin/Release/dep/Utility bin/Release/obj bin/Release/obj/Platform bin/Release/obj/Platform/MacOS bin/Release/obj/Platform/Unix bin/Release/obj/Platform/Win32 bin/Release/obj/Utility
+bin/Release/obj/%.o: src/% bin/Release/obj/PCH.hpp.gch | bin/Release/dep/%.d bin bin/Release bin/Release/dep bin/Release/dep/Fonts bin/Release/dep/Platform bin/Release/dep/Platform/MacOS bin/Release/dep/Platform/Unix bin/Release/dep/Platform/Win32 bin/Release/dep/Utility bin/Release/obj bin/Release/obj/Fonts bin/Release/obj/Platform bin/Release/obj/Platform/MacOS bin/Release/obj/Platform/Unix bin/Release/obj/Platform/Win32 bin/Release/obj/Utility
 #  recipe to execute (from 'Makefile', line 307):
 	$(call compile_with,@,<,$(OBJ_COMPILE),$(POST_COMPILE))
 
-bin/Release/obj/./%.o: /% bin/Release/obj/PCH.hpp.gch | bin/Release/dep/./%.d bin bin/Release bin/Release/dep bin/Release/dep/Platform bin/Release/dep/Platform/MacOS bin/Release/dep/Platform/Unix bin/Release/dep/Platform/Win32 bin/Release/dep/Utility bin/Release/obj bin/Release/obj/Platform bin/Release/obj/Platform/MacOS bin/Release/obj/Platform/Unix bin/Release/obj/Platform/Win32 bin/Release/obj/Utility
+bin/Release/obj/./%.o: /% bin/Release/obj/PCH.hpp.gch | bin/Release/dep/./%.d bin bin/Release bin/Release/dep bin/Release/dep/Fonts bin/Release/dep/Platform bin/Release/dep/Platform/MacOS bin/Release/dep/Platform/Unix bin/Release/dep/Platform/Win32 bin/Release/dep/Utility bin/Release/obj bin/Release/obj/Fonts bin/Release/obj/Platform bin/Release/obj/Platform/MacOS bin/Release/obj/Platform/Unix bin/Release/obj/Platform/Win32 bin/Release/obj/Utility
 #  recipe to execute (from 'Makefile', line 310):
 	$(call compile_with,@,<,$(OBJ_COMPILE_T),$(POST_COMPILE_T))
 
-bin/Release/obj/%.hpp.gch: src/%.hpp | bin/Release/dep/%.d bin bin/Release bin/Release/dep bin/Release/dep/Platform bin/Release/dep/Platform/MacOS bin/Release/dep/Platform/Unix bin/Release/dep/Platform/Win32 bin/Release/dep/Utility bin/Release/obj bin/Release/obj/Platform bin/Release/obj/Platform/MacOS bin/Release/obj/Platform/Unix bin/Release/obj/Platform/Win32 bin/Release/obj/Utility
+bin/Release/obj/%.hpp.gch: src/%.hpp | bin/Release/dep/%.d bin bin/Release bin/Release/dep bin/Release/dep/Fonts bin/Release/dep/Platform bin/Release/dep/Platform/MacOS bin/Release/dep/Platform/Unix bin/Release/dep/Platform/Win32 bin/Release/dep/Utility bin/Release/obj bin/Release/obj/Fonts bin/Release/obj/Platform bin/Release/obj/Platform/MacOS bin/Release/obj/Platform/Unix bin/Release/obj/Platform/Win32 bin/Release/obj/Utility
 #  recipe to execute (from 'Makefile', line 313):
 	$(call compile_with,@,<,$(PCH_COMPILE),$(POST_COMPILE))
 
-bin/Release/obj/%.res: src/%.rc | bin/Release/dep/%.rc.d bin bin/Release bin/Release/dep bin/Release/dep/Platform bin/Release/dep/Platform/MacOS bin/Release/dep/Platform/Unix bin/Release/dep/Platform/Win32 bin/Release/dep/Utility bin/Release/obj bin/Release/obj/Platform bin/Release/obj/Platform/MacOS bin/Release/obj/Platform/Unix bin/Release/obj/Platform/Win32 bin/Release/obj/Utility
+bin/Release/obj/%.res: src/%.rc | bin/Release/dep/%.rc.d bin bin/Release bin/Release/dep bin/Release/dep/Fonts bin/Release/dep/Platform bin/Release/dep/Platform/MacOS bin/Release/dep/Platform/Unix bin/Release/dep/Platform/Win32 bin/Release/dep/Utility bin/Release/obj bin/Release/obj/Fonts bin/Release/obj/Platform bin/Release/obj/Platform/MacOS bin/Release/obj/Platform/Unix bin/Release/obj/Platform/Win32 bin/Release/obj/Utility
 #  recipe to execute (from 'Makefile', line 316):
 	$(call compile_with,@,<,$(RC_COMPILE),$(POST_COMPILE_RC))
 
@@ -1704,6 +1720,7 @@ bin/Release/obj/Platform:
 	$(if $(_CLEAN),,@printf '\$(color_blue)')
 	$(MKDIR) $@
 
+ 
 .DELETE_ON_ERROR: all
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -1725,7 +1742,6 @@ clean:
 	$(_Q)$(RM) $(TARGET) $(DEPS) $(OBJS)
 
 bin/Release:
- 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -1742,6 +1758,14 @@ bin/Release/game.exe: bin/Release/obj/PCH.hpp.gch bin/Release/obj/Platform/Win32
 	$(_Q)$(CC) $(_LIB_DIRS) $(_SYMBOLS) -o $@ $(ORIGIN_FLAG) $(OBJS) $(_LINK_LIBRARIES) $(BUILD_FLAGS)
 	@printf '\n'
 	$(call build_deps)
+
+bin/Release/dep/Fonts:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 357):
+	$(if $(_CLEAN),,@printf '\$(color_blue)')
+	$(MKDIR) $@
 
 bin/Release/dep/Platform/Unix:
 #  Implicit rule search has not been done.
@@ -1850,6 +1874,14 @@ env/.all.mk:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+
+bin/Release/obj/Fonts:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 357):
+	$(if $(_CLEAN),,@printf '\$(color_blue)')
+	$(MKDIR) $@
 
 makepch: bin/Release/obj/PCH.hpp.gch
 #  Phony target (prerequisite of .PHONY).
@@ -1976,6 +2008,7 @@ bin/Release/obj/Main.cpp.o:
 #  Modification time never checked.
 #  File has not been updated.
 
+ 
 bin/Release/game.dll: bin/Release/obj/PCH.hpp.gch bin/Release/obj/Platform/Win32/WindowsPlatform.cpp.o bin/Release/obj/Platform/MacOS/MacOSPlatform.cpp.o bin/Release/obj/Platform/Unix/LinuxPlatform.cpp.o bin/Release/obj/Main.cpp.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -1987,19 +2020,19 @@ bin/Release/game.dll: bin/Release/obj/PCH.hpp.gch bin/Release/obj/Platform/Win32
 	@printf '\n'
 
 # files hash-table stats:
-# Load=55/1024=5%, Rehash=0, Collisions=8/231=3%
+# Load=57/1024=6%, Rehash=0, Collisions=9/233=4%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 95 / storage = 1314 B / avg = 13 B
-# current buf: size = 8162 B / used = 1314 B / count = 95 / avg = 13 B
+# strcache buffers: 1 (0) / strings = 98 / storage = 1365 B / avg = 13 B
+# current buf: size = 8162 B / used = 1365 B / count = 98 / avg = 13 B
 
-# strcache performance: lookups = 268 / hit rate = 64%
+# strcache performance: lookups = 281 / hit rate = 65%
 # hash-table stats:
-# Load=95/8192=1%, Rehash=0, Collisions=7/268=3%
-# Finished Make data base on Sun May  8 21:02:31 2022
+# Load=98/8192=1%, Rehash=0, Collisions=7/281=2%
+# Finished Make data base on Mon May  9 20:20:24 2022
 
  

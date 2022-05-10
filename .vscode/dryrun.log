@@ -4,12 +4,14 @@ make makepch
 mkdir -p bin
 mkdir -p bin/Release
 mkdir -p bin/Release/dep
+mkdir -p bin/Release/dep/Fonts
 mkdir -p bin/Release/dep/Platform
 mkdir -p bin/Release/dep/Platform/MacOS
 mkdir -p bin/Release/dep/Platform/Unix
 mkdir -p bin/Release/dep/Platform/Win32
 mkdir -p bin/Release/dep/Utility
 mkdir -p bin/Release/obj
+mkdir -p bin/Release/obj/Fonts
 mkdir -p bin/Release/obj/Platform
 mkdir -p bin/Release/obj/Platform/MacOS
 mkdir -p bin/Release/obj/Platform/Unix
@@ -19,16 +21,17 @@ printf '   \033[0;34msrc/PCH.hpp\n'
 g++ -MT bin/Release/obj/PCH.hpp.gch -MMD -MP -MF bin/Release/dep/PCH.Td  -O2 -std=c++17 -Wall -Werror -Wextra -Wpedantic -Wunreachable-code -Wunused -Wignored-qualifiers -Wcast-align -Wformat-nonliteral -Wformat=2 -Winvalid-pch -Wmissing-declarations -Wmissing-format-attribute -Wmissing-include-dirs -Wredundant-decls -Wswitch-default -Wodr -fdiagnostics-color=always -fpic -Isrc/ -Ilib/ -I/usr/local/include -o bin/Release/obj/PCH.hpp.gch -c src/PCH.hpp && mv -f bin/Release/dep/PCH.Td bin/Release/dep/PCH.d && touch bin/Release/obj/PCH.hpp.gch
 printf ''
 make -j8 makebuild
- 
 mkdir -p bin
 mkdir -p bin/Release
 mkdir -p bin/Release/dep
+mkdir -p bin/Release/dep/Fonts
 mkdir -p bin/Release/dep/Platform
 mkdir -p bin/Release/dep/Platform/MacOS
 mkdir -p bin/Release/dep/Platform/Unix
 mkdir -p bin/Release/dep/Platform/Win32
 mkdir -p bin/Release/dep/Utility
 mkdir -p bin/Release/obj
+mkdir -p bin/Release/obj/Fonts
 mkdir -p bin/Release/obj/Platform
 mkdir -p bin/Release/obj/Platform/MacOS
 mkdir -p bin/Release/obj/Platform/Unix
